@@ -17,10 +17,9 @@ def wrap_html(message):
 
 @app.route('/')
 def hello_world():
-    message = 'Welcome to CI/CD 101 using CircleCI!'
+    message = 'Welcome to CI/CD 101 using CircleCI'
     html = wrap_html(message)
     return html
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-    
